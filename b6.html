@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=0;
+       let x=2;
+       while(n<20){
+        let check =true;
+        for(let i=2;i<=Math.sqrt(x);i++){
+            if(x%i===0){
+                check =false;
+                break;
+            }
+        }
+        if(check){
+            n++;
+            console.log(`Số nguyên tố thứ ${n}:${x}`);
+
+        }
+        x++;
+       }
+
+        while(n<4){
+            let t=0;
+            for(let i=1;i<=x/2;i++){
+                if(x%i===0){
+                    t+=i;
+                }
+            }
+        }
+        if(t===x){
+            n++;
+            console.log(`${x}là số hoàn hảo` );
+        }
+    </script>
+</body>
+</html>

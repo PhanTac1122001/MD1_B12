@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+
+    //    let random=Math.random();
+    //    let random2=Math.random();
+    //    let random3=Math.random();
+
+    //    let red=Math.floor(random*256);
+    //    let green=Math.floor(random2*256);
+    //    let blue=Math.floor(random3*256);
+    //    let rgb=(red,green,blue);
+    //    console.log(`%c hello style = "background-color: #${rgb}" `);
+        let fibonaci =+prompt("Nhập số Fibonaci:");
+        let a= 1;
+        let b=1;
+        
+        for(let i=1;i<=fibonaci;i++){
+            console.log(a);
+            c=a+b;
+            a=b;
+            b=c;
+            
+        }
+             
+        let Delta = +prompt('Mời bạn nhập số'); 
+        for (let i = Delta; i >= 1; i--) {
+            let row = '';
+            for (let j = 1; j <= i; j++) {
+                row += '*';
+            }
+            console.log(row);
+        }
+        for (let i = Delta; i >= 1; i--) {
+            let row = '';
+            for (let k = Delta - i; k > 0; k--) {
+                row += '*';
+            }
+            
+            console.log(row);
+        }
+        for (let i = 1; i <= Delta; i++) {
+            let row = '';
+            for (let k = 1; k <=Delta - i; k++) {
+                row += ' ';
+            }
+            for (let j = 1; j <= i; j++) {
+                row += '*';
+            }
+            console.log(row);
+        }
+
+        for (let i = 1; i <= Delta; i++) {
+            let row = '';
+            
+            for (let j = 1; j <= i; j++) {
+                row += ' ';
+            }
+            for (let k = 1; k <=Delta - i; k++) {
+                row += '*';
+            }
+            console.log(row);
+        }
+        
+        
+        let result=10;
+        let loop=true
+        while(loop===true){
+            let answer=+prompt("Mời nhập từ 1-10:")
+        
+        if(answer>result){
+            console.log("Too big");
+        }
+        else if(answer<result){
+            console.log("Too small");
+        }
+        else{
+            console.log("Bingo");
+            loop=false;
+        }
+        }
+        
+       
+
+    </script>
+</body>
+</html>
